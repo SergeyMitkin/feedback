@@ -12,7 +12,7 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'modules' => [
-        'pages' => [
+        'editPages' => [
             'class' => 'frontend\modules\pages',
         ],
     ],
