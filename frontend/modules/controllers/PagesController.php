@@ -1,6 +1,6 @@
 <?php
 
-namespace frontend\controllers;
+namespace frontend\modules\controllers;
 
 use frontend\models\tables\Pages;
 use frontend\models\filters\PagesFilter;
