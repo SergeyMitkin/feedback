@@ -32,6 +32,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'name',
             'text:ntext',
+            'static_page' => [
+                'attribute' => 'static_page',
+                'filter'    => $searchModel->getStaticPages(),
+                'value'     => function ($model) {
+                    return $model->staticPageName;
+                }
+            ],
             [
                 'class' => ActionColumn::className(),
                 'urlCreator' => function ($action, Pages $model, $key, $index, $column) {

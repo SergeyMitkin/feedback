@@ -17,7 +17,7 @@ class PagesFilter extends Pages
     public function rules()
     {
         return [
-            [['id'], 'integer'],
+            [['id', 'static_page'], 'integer'],
             [['name', 'text'], 'safe'],
         ];
     }
@@ -59,6 +59,7 @@ class PagesFilter extends Pages
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
+            'static_page' => $this->static_page,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
