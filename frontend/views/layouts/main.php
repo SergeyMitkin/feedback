@@ -37,7 +37,7 @@ AppAsset::register($this);
     $menuItems = [
         ['label' => 'Главная', 'url' => ['/site/index']],
         ['label' => 'О компании', 'url' => ['/site/about']],
-        ['label' => 'Вакансии', 'url' => ['/site/contact']],
+        ['label' => 'Вакансии', 'url' => ['/site/vacancies']],
         ['label' => 'Модуль страниц', 'url' => ['/pages']],
     ];
 //    if (Yii::$app->user->isGuest) {
