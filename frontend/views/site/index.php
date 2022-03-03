@@ -20,7 +20,14 @@ $this->title = 'My Yii Application';
             <?php echo
                 \yii\widgets\ListView::widget([
                     'dataProvider' => $dataProvider,
-                    'itemView' => 'text_item'
+                    'itemView' => 'text_item',
+                    'summary' => false,
+                    'itemOptions' => [
+                        'tag' => false,
+                    ],
+                    'options' => [
+                            'class' => 'preview-container'
+                    ]
                 ])
             ?>
 

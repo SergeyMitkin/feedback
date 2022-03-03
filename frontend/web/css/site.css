@@ -88,3 +88,9 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+
+.preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
