@@ -18,11 +18,10 @@ $this->title = 'My Yii Application';
         <div class="row">
 
             <?php echo
-            \yii\widgets\ListView::widget([
-                'dataProvider' => $dataProvider,
-                'itemView' => 'text_item'
-            ])
-
+                \yii\widgets\ListView::widget([
+                    'dataProvider' => $dataProvider,
+                    'itemView' => 'text_item'
+                ])
             ?>
 
 <!--            <div class="col-lg-4">-->

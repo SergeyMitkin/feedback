@@ -87,6 +87,13 @@ class SiteController extends Controller
         ]);
     }
 
+    public function actionOne()
+    {
+        $model = Pages::findOne(\Yii::$app->request->get()['id']);
+
+        return $this->render('text_item', ['model' => $model]);
+    }
+
     /**
      * Logs in a user.
      *
