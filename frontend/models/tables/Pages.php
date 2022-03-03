@@ -33,11 +33,9 @@ class Pages extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id'], 'required'],
             [['id', 'static_page'], 'integer'],
             [['text'], 'string'],
             [['name'], 'string', 'max' => 255],
-            [['id'], 'unique'],
         ];
     }
 
